@@ -1,0 +1,19 @@
+<h2>Deposit Money</h2>
+
+<form method="POST">
+
+Account ID<br>
+<input name="account_id"><br>
+
+Amount<br>
+<input name="amount"><br>
+
+<button>Deposit</button>
+
+</form>
+
+{% if message %}
+<p>{{message}}</p>
+{% endif %}
+
+<a href="/">Back</a>

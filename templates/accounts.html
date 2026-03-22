@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>All Accounts</title>
+<link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<h2>Customer Accounts</h2>
+
+<table>
+
+<tr>
+
+<th>Account ID</th>
+<th>Name</th>
+<th>Type</th>
+<th>Balance</th>
+
+</tr>
+
+{% for a in accounts %}
+
+<tr>
+
+<td>{{a[0]}}</td>
+<td>{{a[1]}}</td>
+<td>{{a[2]}}</td>
+<td>{{a[3]}}</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<a href="/">Back</a>
+
+</body>
+</html>

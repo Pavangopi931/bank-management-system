@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Transaction History</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h2>Transaction History</h2>
+
+<form method="POST">
+
+<label>Enter Account ID</label>
+<input type="number" name="account_id" required>
+
+<button>View Transactions</button>
+
+</form>
+
+<br>
+
+{% if message %}
+<p>{{message}}</p>
+{% endif %}
+
+{% if transactions %}
+
+<table border="1">
+
+<tr>
+<th>Account ID</th>
+<th>Type</th>
+<th>Amount</th>
+<th>Date</th>
+</tr>
+
+{% for t in transactions %}
+
+<tr>
+<td>{{t[1]}}</td>
+<td>{{t[2]}}</td>
+<td>₹{{t[3]}}</td>
+<td>{{t[4]}}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+{% endif %}
+
+<br>
+
+<a href="/">Back to Home</a>
+
+</body>
+</html>

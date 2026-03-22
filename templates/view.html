@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>View Account</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h2>View Account</h2>
+
+<form method="POST">
+
+<label>Account ID</label>
+<input type="number" name="account_id" required>
+
+<button>Search</button>
+
+</form>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+
+{% if account %}
+
+<h3>Account Details</h3>
+
+<p>Account ID : {{ account[0] }}</p>
+<p>Name : {{ account[1] }}</p>
+<p>Type : {{ account[2] }}</p>
+<p>Balance : ₹{{ account[3] }}</p>
+
+<br>
+
+<a href="/transactions?account_id={{account[0]}}">
+<button>View Full Transaction History</button>
+</a>
+
+{% endif %}
+
+<a href="/">Back</a>
+
+</body>
+</html>

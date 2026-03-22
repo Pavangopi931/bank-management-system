@@ -1,0 +1,107 @@
+body{
+
+font-family: Arial;
+background:#f4f6f8;
+text-align:center;
+
+}
+
+h1{
+
+background:#003366;
+color:white;
+padding:20px;
+
+}
+
+.menu{
+
+margin-top:40px;
+
+}
+
+.menu a{
+
+display:block;
+
+width:250px;
+
+margin:15px auto;
+
+padding:15px;
+
+background:#007bff;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:5px;
+
+font-size:18px;
+
+}
+
+.menu a:hover{
+
+background:#0056b3;
+
+}
+
+form{
+
+background:white;
+
+width:350px;
+
+margin:40px auto;
+
+padding:25px;
+
+border-radius:8px;
+
+box-shadow:0 0 10px #ccc;
+
+}
+
+input,select{
+
+width:90%;
+
+padding:10px;
+
+margin:10px;
+
+}
+
+button{
+
+padding:10px 20px;
+
+background:green;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+table{
+
+margin:40px auto;
+
+border-collapse:collapse;
+
+width:60%;
+
+}
+
+th,td{
+
+border:1px solid #ddd;
+
+padding:10px;
+
+}
